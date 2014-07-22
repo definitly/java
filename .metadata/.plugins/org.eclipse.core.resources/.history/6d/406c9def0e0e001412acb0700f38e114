@@ -1,0 +1,7 @@
+
+public class PassengerPlane extends Aircraft {
+	
+	public int  passcapacity; // загрузка самолета пассажирами 
+	public int seats; // количество мест в самолете
+
+}

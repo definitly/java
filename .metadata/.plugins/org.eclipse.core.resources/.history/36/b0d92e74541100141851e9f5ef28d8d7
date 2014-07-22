@@ -1,0 +1,18 @@
+
+public class gbD {
+	
+	
+	static public void getD (double lat1, double lon1 ,double lat2 , double lon2 ) {
+		
+		double dist , azim;
+		
+	dist= (int) GetDistance.getDist( lat1, lon1 , lat2 ,lon2 );
+	azim= (int) GetDistance.getAzimut(lat1, lon1 , lat2 ,lon2);
+	
+		
+    brakeDistance.brake(lat1, lon1, dist, azim);
+		
+		
+	}
+
+}

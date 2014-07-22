@@ -1,0 +1,13 @@
+INDEX VERSION 1.126+/usr/home/definitly/JAVA/.metadata/.plugins/org.eclipse.jdt.core
+3504721874.index
+3336334800.index
+19129550.index
+4059598727.index
+2636260751.index
+4175715606.index
+346429197.index
+2148323183.index
+595921326.index
+973690685.index
+1115981709.index
+3538233956.index

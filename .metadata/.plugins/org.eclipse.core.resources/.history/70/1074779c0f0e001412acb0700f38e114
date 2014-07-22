@@ -1,0 +1,4 @@
+
+public class CaroPlane extends Aircraft {
+
+}

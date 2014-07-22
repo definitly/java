@@ -1,0 +1,17 @@
+
+public class CargoPlane extends Aircraft {
+	
+	private double maxpayload; // максимальная загрузка
+	private double payload;    // загрузка самолета
+	private double percentload; //загрузка самолета в процентах
+	
+	public double percent(payload,maxpayload) {
+		
+		percentload=(payload/maxpayload)*100;
+		
+		return percentload;
+	
+	}
+	
+
+

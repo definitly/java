@@ -1,0 +1,10 @@
+
+public class Airplane {
+
+	public static void main(String[] args) {
+		
+		CargoPlane An225 = new CargoPlane ()
+		An225.id=1;
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Aircraft {
+	
+	private int id;
+	public int numberofengine;
+	public double fuel;
+
+}

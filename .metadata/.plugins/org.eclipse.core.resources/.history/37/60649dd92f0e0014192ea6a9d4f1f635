@@ -1,0 +1,45 @@
+
+public class PassengerPlane extends Aircraft {
+	
+	private double  passcapacity; // количество пассажиров в самолете
+	private double seats; // количество мест в самолете
+	private double payload; // загрузка самолета
+	private double percentload; // загрузка самолета в процентах
+	
+	
+	
+	public double  getPercent () {
+		   
+		   percentload=(float)(getPasscapacity()/getSeats()*100);
+				  
+				return    percentload;
+				
+	}
+ 
+    public double  getPayload() {
+    	 payload=getPasscapacity()*900;
+    	return payload;
+    }
+	
+	
+	
+	public double getSeats() {
+		return seats;
+	}
+	public void setSeats(int seats) {
+		this.seats = seats;
+	}
+	public double getPasscapacity() {
+		return passcapacity;
+	}
+	public void setPasscapacity(int passcapacity) {
+		this.passcapacity = passcapacity;
+	}
+    
+
+
+
+
+
+}
+

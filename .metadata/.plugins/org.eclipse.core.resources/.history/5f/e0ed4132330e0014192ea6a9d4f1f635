@@ -1,0 +1,20 @@
+
+public class Aircraft {
+	
+	private int id;
+	private int numberofengine;
+	public double fuel;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getNumberofengine() {
+		return numberofengine;
+	}
+	public void setNumberofengine(int numberofengine) {
+		this.numberofengine = numberofengine;
+	}
+
+}

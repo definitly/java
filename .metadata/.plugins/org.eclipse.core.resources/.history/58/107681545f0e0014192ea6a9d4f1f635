@@ -1,0 +1,55 @@
+
+public class Aircraft {
+	
+	private int id;
+	private int numberofengine;
+	private String nameofplane;
+	private int airspeed; // крейсерская скорость км в час
+	 double time;// время в пути
+	public double fuel;
+	
+	
+	public int getId() {
+		return id;
+  	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getNumberofengine() {
+		return numberofengine;
+	}
+	public void setNumberofengine(int numberofengine) {
+		this.numberofengine = numberofengine;
+	}
+	public String getNameofplane() {
+		return nameofplane;
+	}
+	public void setNameofplane(String nameofplane) {
+		this.nameofplane = nameofplane;
+	}
+	public int getAirspeed() {
+		return airspeed;
+	}
+	public void setAirspeed(int airspeed) {
+		this.airspeed = airspeed;
+	}
+
+	
+	public String getTime ( double  dist , int  airspeed ) {
+		
+  		time=dist/this.airspeed; 
+		
+		
+		
+		int hours = (int)Math.floor(time);
+		double rawRestMinutes = (time - hours) * 60;
+		int minutes = (int)Math.floor(rawRestMinutes);
+		
+
+		String t=(hours+"  часов   "+ minutes+"   минут");
+		return t;
+		
+	}
+	
+	
+}

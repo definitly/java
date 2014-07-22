@@ -1,0 +1,129 @@
+
+public class GetDistance {
+	
+	
+	private double lat1;
+	private double lon1;
+	
+	private double lat2;
+	private double lon2;
+	double rad=6378.1;
+	double d=2555;
+	
+	
+    
+	
+	
+	
+	
+	
+	
+	public double getLat1() {
+		return lat1;
+	}
+	public void setLat1(double lat1){
+		this.lat1= lat1;
+	}
+	public double getLon1() {
+		return lon1;
+	}
+	public void setLon1(double lon1){
+		this.lon1= lon1;
+	}
+	public double getLon2() {
+		return lon2;
+	}
+	public void setLon2(double lon2) {
+		this.lon2 = lon2;
+	}
+	public  double getLat2() {
+		return lat2;
+	}
+	public void setLat2(double lat2) {
+		this.lat2 = lat2;
+	}
+	
+
+
+    //вычесление длины большого круга 
+   
+    
+    public double getDist() {
+    
+    	double rlat2=Math.toRadians(getLat2());	
+        double rlat1=Math.toRadians(getLat1());
+        double rlon1=getLon1()*Math.PI/180;
+        double rlon2=getLon2()*Math.PI/180;
+        double cl1 = Math.cos(rlat1);
+        double cl2 = Math.cos(rlat2);	
+        double sl1=Math.sin(rlat1);
+        double sl2= Math.sin(rlat2);
+        double delta = rlon2-rlon1;
+        double cdelta = Math.cos(delta);
+        double sdelta = Math.sin(delta);
+        
+    
+	   double x =Math.sqrt(Math.pow(cl2*sdelta,2)+Math.pow(cl1*sl2-sl1*cl2*cdelta,2));
+	   double y=sl1*sl2+cl1*cl2*cdelta;
+	   double ad = Math.atan2(x,y);
+	   int   dist =      (int)( (ad*rad)); //в км
+	   
+       return dist;
+    }
+    
+  
+    public double getAzimut () {
+		 
+		 
+	    double rlat2=getLat2()*Math.PI/180;	
+        double rlat1=getLat1()*Math.PI/180;
+        double rlon1=getLon1()*Math.PI/180;
+        double rlon2=getLon2()*Math.PI/180;
+        double cl1 = Math.cos(rlat1);
+        double cl2 = Math.cos(rlat2);	
+        double sl1=Math.sin(rlat1);
+        double sl2= Math.sin(rlat2);
+        double delta = rlon2-rlon1;
+        double cdelta = Math.cos(delta);
+        double sdelta = Math.sin(delta);
+ 
+double x2 =(cl1*sl2)-(sl1*cl2*cdelta);
+double y2=sdelta*cl2;
+double z=Math.toDegrees(Math.atan(-y2/x2));
+if (x2<0);{
+  z=z+180;
+}
+double z2=(z+190)%360-180;
+z2=-Math.toRadians(z2);
+double anglerad2 = z2-((2*Math.PI)*Math.floor((z2/(2*Math.PI))));
+double angledeg =(anglerad2*180.)/Math.PI;
+return angledeg;
+}
+ 
+ 
+	 
+	   
+	
+
+	 
+ public double DesPoint ()
+ 
+ {
+	 double rlat2=getLat2()*Math.PI/180;	
+     double rlat1=getLat1()*Math.PI/180;
+     double rlon1=getLon1()*Math.PI/180;
+     double rlon2=getLon2()*Math.PI/180;	 
+     double despoint;
+     
+     return despoint;
+
+ }
+	 
+ 
+}
+	
+	
+	
+	
+
+

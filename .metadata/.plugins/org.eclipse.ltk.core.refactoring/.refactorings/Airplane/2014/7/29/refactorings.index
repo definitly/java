@@ -1,0 +1,17 @@
+1405641520521	Delete element
+1405642191167	Delete element
+1405651457381	Encapsulate field 'payload'
+1405651693052	Encapsulate field 'maxpayload'
+1405652160291	Encapsulate field 'seats'
+1405652243628	Encapsulate field 'passcapacity'
+1405655116578	Encapsulate field 'id'
+1405656707606	Encapsulate field 'numberofengine'
+1405657263315	Encapsulate field 'nameofplane'
+1405659691043	Encapsulate field 'lat1'
+1405659698368	Encapsulate field 'long1'
+1405659902766	Encapsulate field 'lon2'
+1405659906529	Encapsulate field 'lat2'
+1405666319556	Encapsulate field 'airspeed'
+1405683067924	Encapsulate field 'rlat1'
+1405685829455	Encapsulate field 'rlat2'
+1405706284790	Delete element

@@ -1,0 +1,7 @@
+
+public class CargoPlane extends Aircraft {
+	
+	private double maxpayload; // максимальная загрузка
+	private double payload;    // загрузка самолета
+
+}

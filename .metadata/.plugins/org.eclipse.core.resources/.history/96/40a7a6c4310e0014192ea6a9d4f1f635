@@ -1,0 +1,14 @@
+
+public class Aircraft {
+	
+	private int id;
+	public int numberofengine;
+	public double fuel;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+
+}

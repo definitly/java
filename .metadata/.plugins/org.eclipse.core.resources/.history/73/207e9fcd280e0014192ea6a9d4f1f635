@@ -1,0 +1,35 @@
+
+public class PassengerPlane extends Aircraft {
+	
+	private int  passcapacity; // загрузка самолета пассажирами 
+	private int seats; // количество мест в самолете
+	private int percentload; // загрузка самолета в процентах
+	
+	public int getSeats() {
+		return seats;
+	}
+	public void setSeats(int seats) {
+		this.seats = seats;
+	}
+	public int getPasscapacity() {
+		return passcapacity;
+	}
+	public void setPasscapacity(int passcapacity) {
+		this.passcapacity = passcapacity;
+	}
+    
+
+   public int  getPercent () {
+	   
+	   percentload=(passcapacity/seats)*100;
+			  
+			return    percentload;
+			   
+	   
+   }
+
+
+
+
+}
+

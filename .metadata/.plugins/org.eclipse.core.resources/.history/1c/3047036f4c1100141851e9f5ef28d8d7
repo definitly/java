@@ -1,0 +1,23 @@
+
+public class brakeDistance {
+	
+	private int a=10;
+	
+	
+	      
+	public void brake () {
+		
+		int i=27;
+		while  (i>0) {
+			
+			
+			
+			
+			i--;
+		}
+		
+	}
+	
+	
+
+}

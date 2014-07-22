@@ -1,0 +1,23 @@
+
+public class brakeDistance {
+	
+	private int a=10;
+	
+	
+	      
+	public void brake (double lat1, double lon1 ,int d ,int b) {
+		
+		
+		while  (d>0) {
+			
+			
+			GetDistance.DesPoint(lat1, lon1, d, b);
+			
+			d--;
+		}
+		
+	}
+	
+	
+
+}
