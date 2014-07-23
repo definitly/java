@@ -1,0 +1,70 @@
+
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public  class TestFrame    {
+     
+static  private JTextField textField,textField2,textField3,textField4;
+	
+public static void createGUI() {
+	 JFrame jf = new JFrame(); 
+     jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+     jf.setSize(400, 300); 
+     jf.setVisible(true); 
+
+     // создаем  панель. 
+     JPanel p = new JPanel(); 
+     jf.add(p); 
+
+     // к панели добавляем менеджер FlowLayout. 
+     p.setLayout(new FlowLayout()); 
+
+     // к панели добавляем кнопки. 
+     JButton button =new JButton("start 2"); 
+     p.add(button);
+    
+     textField =   new JTextField(20);
+     p.add(textField);
+     textField2 =   new JTextField(20);
+     p.add(textField2);
+     
+     textField3=   new JTextField(20);
+     p.add(textField3);
+     textField4 =   new JTextField(20);
+     p.add(textField4);
+  
+     JLabel label = new JLabel("Input:");
+    	 
+    	 
+    
+ 
+button.addActionListener(new ActionListener() {
+
+    public void actionPerformed(ActionEvent arg0) {
+    	double str = Double.parseDouble( textField.getText());
+    	double str2 =Double.parseDouble( textField2.getText());
+    	double str3 = Double.parseDouble(textField3.getText());
+    	double str4= Double.parseDouble(textField4.getText());
+    	
+    	GetDistance.getDist(str, str2, str3, str4);
+    	System.out.println(GetDistance.getDist(str, str2, str3, str4));
+    	
+       
+    }
+});
+}
+
+}
+
+
+
+
+

@@ -15,7 +15,8 @@ public class Airplane {
 		EventQueue.invokeLater(new Runnable()
 		{
 			public void run() {
-				TestFrame.createGUI();
+				SimpleGUI app = new SimpleGUI();
+				app.setVisible(true);
 				
 			}
 		});
