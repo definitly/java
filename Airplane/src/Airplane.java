@@ -1,3 +1,5 @@
+import java.awt.EventQueue;
+
 
 
 
@@ -7,19 +9,16 @@ public class Airplane {
 	
 		
 	
-	  
-   
-  System.out.println( GetDistance.getDist(53.393055555556, 58.755555555556,55.3,61.5));
-  System.out.println( GetDistance.getAzimut(53.393055555556, 58.755555555556,55.3,61.5));
-  GetDistance.DesPoint(53.393055555556, 58.755555555556,276, 38.88387285670111);
-   
-	//  System.out.println(p.DesPoint())	;
-	  
-	  
-	  
-	 
-	  
-	  
-	
+		EventQueue.invokeLater(new Runnable()
+		{
+			public void run() {
+				TestFrame.createGUI();
+				
+			}
+		});
 	}
 }
+
+   
+
+	 
