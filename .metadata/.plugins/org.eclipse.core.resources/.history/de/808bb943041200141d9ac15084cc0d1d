@@ -1,0 +1,42 @@
+
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+
+
+public class Airplane {
+
+	public static void main(String[] args) {
+	
+		
+	Aircraft A380 = new Aircraft ();
+   A380.getKm();
+   
+  
+			JFrame form1 = new JFrame("form1");
+			JButton button = new JButton("visible");
+
+			form1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			form1.setSize(350,150);
+			form1.add(button);
+			form1.setVisible(true);
+
+			
+		
+	
+	
+   
+	}
+}
+ // gbD.getD(55.786267, 37.543344,35.443232, 139.633913);
+ // System.out.println( GetDistance.getAzimut(53.393055555556, 58.755555555556,55.3,61.5));
+//  GetDistance.DesPoint(53.393055555556, 58.755555555556,276, 38);
+ // brakeDistance.brake(53.393055555556, 58.755555555556,2760, 46);
+	//  System.out.println(p.DesPoint())	;
+	  
+	
+	  
+
+	

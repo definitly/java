@@ -1,0 +1,8 @@
+
+public class traveledDistance {
+	
+	public void traveledD (int km,int t,int sp){
+		
+	}
+
+}

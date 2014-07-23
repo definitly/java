@@ -1,0 +1,11 @@
+
+public class traveledDistance {
+	
+	public int traveledD (int km,int t,int sp){
+		
+		km=t*sp;
+		return km;
+		
+	}
+
+}

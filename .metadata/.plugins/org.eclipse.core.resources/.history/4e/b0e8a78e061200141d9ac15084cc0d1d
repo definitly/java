@@ -1,0 +1,31 @@
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TestFrame {
+     
+public static void createGUI() {
+          JFrame.setDefaultLookAndFeelDecorated(true);
+          JFrame frame = new JFrame("Test frame");
+          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+          
+          JLabel label = new JLabel("Test label");
+          frame.getContentPane().add(label);
+          
+          JPanel panel = new JPanel();
+          panel.setLayout(new FlowLayout());
+        
+          panel.add(label);
+          
+          
+          
+          frame.getContentPane().add(panel);    
+          frame.setPreferredSize(new Dimension(200, 100));
+          
+          frame.pack();
+          frame.setVisible(true);          
+}  
+}

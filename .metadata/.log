@@ -223,22 +223,22 @@ Binding(CTRL+D,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
-!SESSION 2014-07-22 01:51:14.178 -----------------------------------------------
+!SESSION 2014-07-21 15:55:41.160 -----------------------------------------------
 eclipse.buildId=4.3.2.M20140224-0627
 java.version=1.7.0_60
 java.vendor=Oracle Corporation
 BootLoader constants: OS=freebsd, ARCH=x86_64, WS=gtk, NL=ru_RU
 Command-line arguments:  -os freebsd -ws gtk -arch x86_64
 
-!ENTRY org.eclipse.jface 2 0 2014-07-22 01:53:23.333
+!ENTRY org.eclipse.jface 2 0 2014-07-21 15:56:23.049
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2014-07-22 01:53:23.333
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-07-21 15:56:23.049
 !MESSAGE A conflict occurred for CTRL+D:
 Binding(CTRL+D,
 	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
 		Send end of file,
 		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76dd2d23,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d4405ea,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.debug.ui.console,,,system)
@@ -246,7 +246,37 @@ Binding(CTRL+D,
 	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
 		Delete a line of text,
 		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32be91cc,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ce054a8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2014-07-21 16:10:47.001 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140224-0627
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=freebsd, ARCH=x86_64, WS=gtk, NL=ru_RU
+Command-line arguments:  -os freebsd -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-07-21 16:10:54.429
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2014-07-21 16:13:04.905
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-07-21 16:13:04.905
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3fe104bc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4dfdf367,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)

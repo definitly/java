@@ -1,0 +1,84 @@
+
+public class GetDistance {
+	
+	
+	
+	
+  //вычесление длины большого круга 
+   
+	
+	
+	static public double inital (double lat1 , double lon1 ,double lat2 , double lon2) {
+		
+		return (getDist( lat1 ,lon1,lat2 ,lon2));
+	}
+    
+  static  public double getDist(double lat1 , double lon1 , double lat2 , double lon2) {
+    
+    	double rlat2=Math.toRadians(lat2);	
+        double rlat1=Math.toRadians(lat1);
+        double rlon1=Math.toRadians(lon1);
+        double rlon2=Math.toRadians(lon2);
+      
+        
+         return    (int) ( (Math.atan2(Math.sqrt(Math.pow(Math.cos(rlat2)*Math.sin(rlon2-rlon1),2)+
+               Math.pow(Math.cos(rlat1)* Math.sin(rlat2)-Math.sin(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1),2)),
+               Math.sin(rlat1)*Math.sin(rlat2)+Math.cos(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1))*6372795)/1000); //в км
+	   
+       
+    }
+    
+
+
+
+static public double inital2 (double lat1 , double lon1 ,double lat2 , double lon2) {
+	
+	return (getAzimut( lat1 ,lon1,lat2 ,lon2));
+}
+
+
+
+ static   public double getAzimut (double lat1, double lon1 ,double lat2 , double lon2 ) {
+		 
+    	double rlat2=Math.toRadians(lat2);	
+       double rlat1=Math.toRadians(lat1);
+       double rlon1=Math.toRadians(lon1);
+        double rlon2=Math.toRadians(lon2);
+       
+	
+ 
+   return      Math.atan2(Math.sin(rlon2-rlon1)*Math.cos(rlat2),
+        			                Math.cos(rlat1)*Math.sin(rlat2) - Math.sin(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1)
+        			            ) *180/Math.PI;
+       		        
+
+    }
+ 
+ }
+	   
+	
+
+	 
+// public double DesPoint ()
+ 
+// {
+//	 double rlat2=Math.toRadians(lat2);	
+//     double rlat1=Math.toRadians(lat1);
+//     double rlon1=Math.toRadians(lon1);
+//     double rlon2=Math.toRadians(lon2);
+    
+  //   double despoint;
+     
+     
+  //   return 1;
+
+// }
+	 
+ 
+
+//}
+	
+	
+	
+
+

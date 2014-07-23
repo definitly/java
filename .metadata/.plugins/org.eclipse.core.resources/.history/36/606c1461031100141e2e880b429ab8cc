@@ -1,0 +1,24 @@
+
+
+
+public class Airplane {
+
+	public static void main(String[] args) {
+	
+		
+	
+	  
+   
+  System.out.println( GetDistance.inital(43, 45, 56, 45));
+  
+   
+	//  System.out.println(p.DesPoint())	;
+	  
+	  
+	  
+	 
+	  
+	  
+	
+	}
+}

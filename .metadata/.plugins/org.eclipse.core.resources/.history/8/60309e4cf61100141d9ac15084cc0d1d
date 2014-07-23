@@ -1,0 +1,16 @@
+
+public class prDistance {
+
+	
+	
+	public addDist (int km,int t,int sp) {
+	
+	
+	
+		
+		return km;
+		
+	}
+	
+
+}

@@ -1,0 +1,30 @@
+
+public class GreatCircleBearing {
+	
+	static Double degToRad = Math.PI / 180.0;
+		 
+		        static public Double initial (Double lat1, Double long1, Double lat2, Double long2)
+		        {
+		            return (_bearing(lat1, long1, lat2, long2) + 360.0) % 360;
+	        }
+	 
+	        static public Double final(Double lat1, Double long1, Double lat2, Double long2)
+		        {
+		            return (_bearing(lat2, long2, lat1, long1) + 180.0) % 360;
+		        }
+	 
+		        static private Double _bearing(Double lat1, Double long1, Double lat2, Double long2)
+		        {
+		            Double phi1 = lat1 * degToRad;
+		            Double phi2 = lat2 * degToRad;
+	            Double lam1 = long1 * degToRad;
+	            Double lam2 = long2 * degToRad;
+		 
+		            return Math.Atan2(Math.Sin(lam2-lam1)*Math.Cos(phi2),
+	                Math.Cos(phi1)*Math.Sin(phi2) - Math.Sin(phi1)*Math.Cos(phi2)*Math.Cos(lam2-lam1)
+	            ) * 180/Math.PI;
+	        }
+	
+	
+
+}

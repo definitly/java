@@ -1,0 +1,84 @@
+
+public class GetDistance {
+	
+ 	
+	
+	
+  //вычесление длины большого круга 
+   
+	
+	
+
+    
+  static  public double getDist(double lat1 , double lon1 , double lat2 , double lon2) {
+    
+    	double rlat2=Math.toRadians(lat2);	
+        double rlat1=Math.toRadians(lat1);
+        double rlon1=Math.toRadians(lon1);
+        double rlon2=Math.toRadians(lon2);
+      
+        
+         return    (int) ( (Math.atan2(Math.sqrt(Math.pow(Math.cos(rlat2)*Math.sin(rlon2-rlon1),2)+
+               Math.pow(Math.cos(rlat1)* Math.sin(rlat2)-Math.sin(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1),2)),
+               Math.sin(rlat1)*Math.sin(rlat2)+Math.cos(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1))*6372795)/1000); //в км
+	   
+       
+    }
+    
+
+
+
+
+
+
+ static   public double getAzimut (double lat1, double lon1 ,double lat2 , double lon2 ) {
+		 
+    	double rlat2=Math.toRadians(lat2);	
+       double rlat1=Math.toRadians(lat1);
+       double rlon1=Math.toRadians(lon1);
+        double rlon2=Math.toRadians(lon2);
+       
+	
+ 
+   return     Math.toDegrees(Math.atan2(Math.sin(rlon2-rlon1)*Math.cos(rlat2),
+        			                Math.cos(rlat1)*Math.sin(rlat2) - Math.sin(rlat1)*Math.cos(rlat2)*Math.cos(rlon2-rlon1)
+        			            ) );
+       		        
+
+    }
+ 
+ 
+	   
+	
+
+	 
+    static   public double DesPoint (double lat1 , double lon1 , int d , int brng)
+ 
+ {
+	 	
+     double rlat1=Math.toRadians(lat1);
+     double rlon1=Math.toRadians(lon1);
+     
+    
+  double  lat2 =   Math.asin( Math.sin(rlat1)*Math.cos(d/6372795) +
+             Math.cos(rlat1)*Math.sin(d/6372795)*Math.cos(brng) );
+   double lon2 =   rlon1 + Math.atan2(Math.sin(brng)*Math.sin(d/6372795)*Math.cos(rlat1),
+                  Math.cos(d/6372795)-Math.sin(rlat1)*Math.sin(lat2));
+     
+     
+     
+     System.out.println(lat2 );
+     
+     
+     return 1;
+
+ }
+	 
+ 
+
+}
+	
+	
+	
+
+

@@ -1,0 +1,13 @@
+
+public class Boat {
+	
+	int len;
+	int wid;
+	
+	public void print()
+	{
+		
+		System.out.println("это класс лодка");
+	}
+
+}

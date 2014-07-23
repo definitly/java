@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Boat beda = new Boat();
+		
+		ArrayList<Boat> B = new ArrayList<Boat> ();
+		
+		B.add(beda);
+		
+		beda.setWid(45);
+		beda.print();
+
+	}
+
+}

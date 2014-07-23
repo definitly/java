@@ -1,0 +1,27 @@
+
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TestFrame {
+     
+public static void createGUI() {
+	JFrame myWindow = new JFrame("Пробное окно");
+	myWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	myWindow.setSize(400, 300);
+	myWindow.setVisible(true);
+	
+    JPanel panel = new JPanel();
+    panel.setLayout(new FlowLayout());
+
+   
+
+
+	
+}  
+}

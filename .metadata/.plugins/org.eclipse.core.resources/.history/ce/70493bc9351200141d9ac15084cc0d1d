@@ -1,0 +1,38 @@
+
+
+import java.awt.FlowLayout;
+
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TestFrame   {
+     
+public static void createGUI() {
+	 JFrame jf = new JFrame(); 
+     jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+     jf.setSize(400, 300); 
+     jf.setVisible(true); 
+
+     // создаем  панель. 
+     JPanel p = new JPanel(); 
+     jf.add(p); 
+
+     // к панели добавляем менеджер FlowLayout. 
+     p.setLayout(new FlowLayout()); 
+
+     // к панели добавляем кнопки. 
+     JButton button =new JButton("start 2"); 
+     p.add(button);
+    
+    JTextField textField =   (new JTextField(20));
+     p.add(textField);
+     button.addActionListener(new ButtonActionListener());
+	 
+}  
+
+
+}

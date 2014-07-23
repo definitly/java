@@ -1,0 +1,26 @@
+
+
+
+public class Airplane {
+
+	public static void main(String[] args) {
+	
+		
+	
+	  
+	  PassengerPlane b777= new PassengerPlane ();
+	 
+   b777.setAirspeed(905);
+   
+   GetDistance.inital(43, 45, 56, 45);
+   
+	//  System.out.println(p.DesPoint())	;
+	  
+	  
+	  
+	 
+	  
+	  
+	
+	}
+}

@@ -1,0 +1,33 @@
+
+
+
+public class Airplane {
+
+	public static void main(String[] args) {
+	
+		
+	  GetDistance p = new 	GetDistance ();
+	  
+	  PassengerPlane b777= new PassengerPlane ();
+	  p.setLat1(59.929156);
+	  p.setLon1(30.355654);
+	  p.setLat2(55.798238);
+	  p.setLon2(37.389729);
+   b777.setAirspeed(905);
+    String a=  b777.getTime(p.getDist(),b777.getAirspeed());                              
+	  
+
+	  
+	  System.out.println(p.getAzimut())	;
+	  System.out.println(p.getDist())	;
+	  System.out.println( a);
+	//  System.out.println(p.DesPoint())	;
+	  
+	  
+	  
+	 
+	  
+	  
+	
+	}
+}
