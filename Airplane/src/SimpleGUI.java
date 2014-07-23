@@ -29,8 +29,6 @@ public class SimpleGUI extends JFrame {
 	    container.add(input3);
 	    container.add(label4);
 	    container.add(input4);
-	  
-	  
 	    button.addActionListener(new ButtonEventListener());
 	    container.add(button);
 	}
